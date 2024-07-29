@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: rgb(28, 28, 28);
+
+}
+
+.card{
+    
+    border-width: 2px;
+   
+    animation: animation 2s linear infinite forwards ; 
+    border-radius: 5px;
+    background-color: black;
+}
+@keyframes animation {
+    0%,100%{
+        
+        border-color: #f6b73c blue red white, purple yellow green blue ;
+        
+    box-shadow: 3px 3px 10px  #f6b73c ;
+
+    }
+    25%{
+        border-color:  blue red ;
+        
+        box-shadow: -3px -3px 10px blue ;
+    }
+
+     50%{
+        border-color:   rgba(255, 0, 0, 0.521) green ;
+        
+    box-shadow: 3px 3px 10px red ;
+     }
+     75%
+     {
+        border-color:   #4d9f0c  blue;
+        
+    box-shadow: 2px 2px 5px   #4d9f0c ;
+     }
+
+}
